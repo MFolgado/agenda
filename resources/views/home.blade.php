@@ -115,12 +115,12 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-
+                @yield('content-head')
             </section>
 
             <!-- Main content -->
             <section class="content">
-
+                @yield('content-body')
             </section>
             <!-- /.content -->
         </div>
