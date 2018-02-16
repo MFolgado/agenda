@@ -3,7 +3,7 @@
 @section('content-head')
 
     <div class="pull-right">
-        <a href="#" class="btn btn-app">
+        <a href="{{route('users.create')}}" class="btn btn-app">
             <i class="fa fa-user-plus"></i> Users
         </a>
     </div>
@@ -19,7 +19,13 @@
                 <h3 class="box-title">{{ mb_strtoupper($user->name) }}</h3>
                 <div class="pull-right">
                     <a href="#"> <i class="fa fa-edit"></i> </a>
-                    <a href="#"> <i class="fa fa-trash"></i> </a>
+
+                    <form action="{{route('users.destroy', $user->id)}}" method="post">
+                        {{ method_field('delete') }}
+                        <button class="" type="submit"><i class="fa fa-trash"></i></button>
+                    </form>
+                    
+
 
                 </div>
             </div>

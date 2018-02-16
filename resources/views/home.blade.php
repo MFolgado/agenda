@@ -47,6 +47,9 @@
                                     <div class="pull-right">
                                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Sair</a>
                                     </div>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                    </form>
                                 </li>
                             </ul>
                         </li>
