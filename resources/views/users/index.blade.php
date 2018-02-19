@@ -18,11 +18,12 @@
             <div class="box-header with-border">
                 <h3 class="box-title">{{ mb_strtoupper($user->name) }}</h3>
                 <div class="pull-right">
-                    <a href="#"> <i class="fa fa-edit"></i> </a>
+
 
                     <form action="{{route('users.destroy', $user->id)}}" method="post">
                         {{ method_field('delete') }}
-                        <button class="" type="submit"><i class="fa fa-trash"></i></button>
+                        <a href="#"> <i class="fa fa-edit"></i> </a>
+                        <button class="" type="submit" style="border: none; color: red;"><i class="fa fa-trash"></i></button>
                     </form>
                     
 
@@ -37,11 +38,11 @@
                     {{ $user->email }}
                 </p>
 
-                <hr>
+                {{--<hr>--}}
 
-                <strong><i class="fa fa-shield margin-r-5"></i> Papéis </strong>
+                {{--<strong><i class="fa fa-shield margin-r-5"></i> Papéis </strong>--}}
 
-                <p class="text-muted">Root</p>
+                {{--<p class="text-muted">Root</p>--}}
 
                 {{--<strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>--}}
 
