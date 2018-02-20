@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('index')
 
-@section('content-body')
+@section('content')
 <div class=" login-box">
     <div class="row">
         <div class="panel panel-default">

@@ -55,7 +55,7 @@
 
 <body class="hold-transition skin-blue sidebar-mini">
 
-
+@yield('content')
 
 <!-- jQuery 3 -->
 <script src="/AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
@@ -107,6 +107,15 @@
 <script src="/AdminLTE/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 
 <script>
+
+    $(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' /* optional */
+        });
+    });
+
     $(function () {
 
         /* initialize the external events
