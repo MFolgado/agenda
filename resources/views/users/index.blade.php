@@ -19,11 +19,12 @@
                 <h3 class="box-title">{{ mb_strtoupper($user->name) }}</h3>
                 <div class="pull-right">
 
-
+                    <a href="{{route('users.edit', $user->id)}}"> <i class="fa fa-edit"></i> </a>
                     <form action="{{route('users.destroy', $user->id)}}" method="post">
+                        {{ csrf_field() }}
                         {{ method_field('delete') }}
-                        <a href="{{route('users.edit', $user->id)}}"> <i class="fa fa-edit"></i> </a>
-                        <button class="" type="submit" style="border: none; color: red;"><i class="fa fa-trash"></i></button>
+
+                        <button class="" type="submit" style="border: none; color: red;" onclick="confirm('Deseja excluir?')"><i class="fa fa-trash"></i></button>
                     </form>
                     
 

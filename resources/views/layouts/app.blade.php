@@ -193,8 +193,8 @@
             <!-- /.content-wrapper -->
 
             <footer class="main-footer">
-                <strong>Copyright &copy; 2014-2016 MGF.</strong> All rights
-                reserved.
+                © Copyright 2018 - Todos os direitos reservados - MGF
+
             </footer>
 
             <!-- Control Sidebar -->
