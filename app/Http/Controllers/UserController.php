@@ -49,6 +49,31 @@ class UserController extends Controller
         return redirect(route('users.index'));
     }
 
+    public function show($id){
+        dd('show');
+    }
+
+    public function edit(User $user){
+
+        return view('users.edit', compact('user'));
+    }
+
+    public function update(Request $request, $id){
+
+        $input = $request->all();
+
+        $user = User::find($id);
+
+        $input['password'] = isset($input['password']) ? bcrypt($input['password']) : $user->password;
+
+        if($user){
+            $user->update($input);
+        }
+
+        return redirect(route('users.index'));
+
+    }
+
     public function destroy($id){
         dd($id);
     }

@@ -22,7 +22,7 @@
 
                     <form action="{{route('users.destroy', $user->id)}}" method="post">
                         {{ method_field('delete') }}
-                        <a href="#"> <i class="fa fa-edit"></i> </a>
+                        <a href="{{route('users.edit', $user->id)}}"> <i class="fa fa-edit"></i> </a>
                         <button class="" type="submit" style="border: none; color: red;"><i class="fa fa-trash"></i></button>
                     </form>
                     
