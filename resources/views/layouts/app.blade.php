@@ -178,7 +178,6 @@
                             <ul class="treeview-menu">
                                 <li><a href="/users"><i class="fa fa-circle-o"></i> Pacientes</a></li>
                                 <li><a href="#"><i class="fa fa-circle-o"></i> Médicos</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Consultas</a></li>
                                 <li><a href="#"><i class="fa fa-circle-o"></i> Exames</a></li>
                             </ul>
                         </li>
