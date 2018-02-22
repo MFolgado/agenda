@@ -156,6 +156,34 @@
                         </li>
                         <li class="treeview ">
                             <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Agendamentos</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/users"><i class="fa fa-circle-o"></i> Consultas</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Exames</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview ">
+                            <a href="#">
+                                <i class="fa fa-institution"></i>
+                                <span>Gerência</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/users"><i class="fa fa-circle-o"></i> Pacientes</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Médicos</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Consultas</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Exames</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview ">
+                            <a href="#">
                                 <i class="fa fa-gear"></i>
                                 <span>Configurações</span>
                             <span class="pull-right-container">
@@ -166,6 +194,7 @@
                                 <li><a href="/users"><i class="fa fa-circle-o"></i> Usuários</a></li>
                                 <li><a href="#"><i class="fa fa-circle-o"></i> Papéis</a></li>
                                 <li><a href="#"><i class="fa fa-circle-o"></i> Permissões</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Parâmetros</a></li>
                             </ul>
                         </li>
                     </ul>
